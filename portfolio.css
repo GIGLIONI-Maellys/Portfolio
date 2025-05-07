@@ -1,20 +1,16 @@
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 body {
     background-color: black;
     color : white;
 }
 
-.two {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .all {
     border: 1px solid white;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     margin: 150px ;
-    align-items: stretch;
+    align-items: space-evenly;
 
 }
 
@@ -47,19 +43,6 @@ body {
     font-size: 80px; 
   }
 
-.right{
-  margin : 30px;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.left {
-  margin : 0px 100px;
-  position: sticky;
-  top: 0px;
-}
-
 .unproj{
   border : 1px solid white;
   margin : 20px; 
@@ -73,7 +56,8 @@ body {
   display: flex;
   margin-top : 50px;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -119,19 +103,11 @@ a {
       color : white;
   }
   
-  .two {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px; 
-  }
-  
   .all {
       border: 1px solid white;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: stretch;
       margin : 0px;
       padding: 0px; 
   
@@ -165,12 +141,6 @@ a {
       font-size: 80px; 
     }
   
-  .right{
-    margin : 30px;
-    display: flex;
-    flex-direction: column;
-  
-  }
   
   .unproj{
     border : 1px solid white;
@@ -195,12 +165,14 @@ a {
     border-radius: 10px;
     margin: 15px;
     padding: 10px 30px 10px 30px;
+    flex-grow: 1;
     font-family: "Tourney", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings:"wdth" 100;
     font-size: 30px; 
+    text-align: center;
   }
   
   .contact{
@@ -220,14 +192,10 @@ a {
     font-size: 30px; 
   }
 
-  .left {
-    position : sticky;
-    top: 0px;
-    background-color: black;
+  .twobuttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px; 
+
   }
   
   .titre {
